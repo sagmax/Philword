@@ -1,0 +1,230 @@
+body {
+    background: url('/img/фон1.jpg') no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;     
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    /* background-color: rgb(58, 170, 170);     */
+}
+
+.imgandhelp{
+    display: flex;
+    margin-top: 2%;
+}
+.imgandinput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1%;
+}
+[id^="elementImg"]{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#question{
+    margin:0 auto;
+    padding:0; 
+    justify-content: center;
+    text-align: center; 
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ff8800;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+#score{
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #ff7b00;
+    letter-spacing: 0.2em;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+#mainImage{
+    margin-right: 5px;
+    border: 5px solid black;
+    background-color: #fff;
+}
+.answ{
+    display: flex;
+    margin-top: 6%;
+    margin-left: 35%;
+    width: 600px;
+    }
+#answ{
+  width: 430px;
+}
+/* .button1{
+    position: fixed;
+    margin-left: 250px;
+} */
+#keyboard{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    justify-content: center;
+}
+#key{
+    margin-top: 2%;
+    
+}
+.block{
+  height: 410px;
+}
+.imdiz-overlay{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+        z-index: 99;
+        transition: all .3s;
+        visibility: hidden;
+        opacity: 0;
+}
+.imdiz-modal{    
+    display: flex;
+    width: 600px;
+    height: 300px;
+    position: fixed;
+    z-index: 100;  
+    top: 50%;
+    margin-top: -200px;
+    background-color: rgb(87, 152, 168);
+    transition: all .3s;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black  ;
+}
+
+.txt {
+    margin-top: 9%;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+
+}
+.restart{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 5%;
+    
+    background-color: rgb(233, 166, 43);
+    border-radius: 6px;
+    border: 2px solid rgb(233, 232, 229)  
+    
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  padding: 15px 30px;
+  font-size: 15px;
+  position: relative;
+  background: transparent;
+  color: #ffa500;
+  text-transform: uppercase;
+  border: 3px solid #ffa500;
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-top: 10%;
+}
+
+button:hover {
+  color: #000;
+}
+span {
+  transition: all 0.7s;
+  z-index: -1;
+}
+
+button .first {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background: #ffa500;
+}
+
+button:hover .first {
+  top: 0;
+  right: 0;
+}
+button .second {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: -100%;
+  height: 100%;
+  width: 25%;
+  background: #ffa500;
+}
+
+button:hover .second {
+  top: 0;
+  left: 50%;
+}
+
+button .third {
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  top: 100%;
+  width: 25%;
+  background: #ffa500;
+}
+
+button:hover .third {
+  top: 0;
+  left: 25%;
+}
+
+button .fourth {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  width: 25%;
+  background: #ffa500;
+}
+
+button:hover .fourth {
+  top: 0;
+  left: 0;
+}
